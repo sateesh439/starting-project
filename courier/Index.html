@@ -1,0 +1,57 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Courier service</title>
+    <!--Angular JS CDN-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+    <!--Routing CDN-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    
+    
+    <!--Boot strap CDN links-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!--End of bootstrap link-->
+    <!--JS and CSS links-->
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    
+
+   <script src="javascript/JavaScript.js"></script>
+    <script src="filters/filter.js"></script>
+    <script src="services/service.js"></script>
+    <base href="/"/>
+</head>
+    <body  ng-app="sss" ng-controller="Mainctrl" >
+    <header>
+        <center>
+        <img ng-src={{image.Logo}} width="600" height="100" ng-hide="hideimage"/>
+        </center>
+    </header>
+         <br>
+         <header ng-include ="'nav.html'"></header>
+    <br>
+    <ng-view></ng-view>
+    <br>
+    <footer class="footer">
+        <br>
+        <center>
+            {{message}}
+        </center>
+    </footer>
+
+    <br>
+
+    <!--boot strap last link-->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script> <!--Jquery link-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!--End of bootstrap last link-->
+</body>
+</html>

@@ -1,0 +1,148 @@
+
+
+<h2><center>Signup Form To Rider</center></h2>
+<form id="myForm" name="myForm" onsubmit="return validatte()" method="get" action="signup form to rider.html">
+
+<div class ="maininf">
+
+<center><b>Account Information</b></center>
+<br>
+<table>
+<tr>
+	<td>Email:</td>
+    <td><input type="text" name="firstName" id="firstName" maxlength="30"  style="width: 200px"></td>
+</tr>
+
+<tr>
+	<td>Password:</td>
+    <td><input type="text" name="firstName" id="firstName" maxlength="30"  style="width: 200px"></td>
+</tr>
+</table>
+
+  <br>
+				<center><b>Profile</b></center>
+	<br>
+    <table>
+  <tr>
+    <td>First Name:</td>
+    <td><input type="text" name="firstName" id="firstName" maxlength="30"  placeholder="First Name" style="width: 200px"></td>
+  </tr>
+  <tr>
+    <td>Middle Name:</td>
+    <td><input type="text" name="middleName" id="middleName"maxlength="30" placeholder="Middle Name"  style="width: 200px"></td>
+  </tr>
+  <tr>
+    <td>Last Name:</td>
+    <td><input type="text" name="lastName" id="lastName" placeholder="Last Name" maxlength="30" style="width: 200px"></td>
+  </tr>
+  <tr>
+    <td>Email Address</td>
+    <td><input name="email" type="text" id="Email" size="40" maxlength="40" ></td>
+  </tr>
+  <td>Social security number(Last 4 digits)</td>
+    <td><input name="SSN" type="text" id="Email" size="40" maxlength="40" ></td>
+  </tr>
+  <td>What type of vechile you have?</td>
+    <td>
+<input list="Types" name="browser">
+ <datalist id="Types">
+  <option value="Personal">
+  <option value="Taxi">
+  
+</datalist>
+</td>
+  </tr>
+  </table>
+<br>
+
+  
+    <center><b>Payment Deatils</b></center>
+	<br>
+	<table>
+  <tr>
+    <td>Please enter your credit card information</td>
+	<td><input type="text" name="cardName" id="cardName" maxlength="30" style="width: 200px"></td>
+  </tr>
+  <tr>
+  <td>Name on the card</td>
+  <td><input type="text" name="cardName" id="cardName" maxlength="30" style="width: 200px"></td>
+  </tr>
+  <tr>
+  <td>Card number</td>
+  <td><input type="text" name="cardNumber" id="cardNumber" maxlength="16" style="width: 200px"></td>
+  </tr>
+  
+  <tr>
+  <td>CVV</td>
+  <td><input type="password" name="cvvNumber" id="cvvNumber" maxlength="3" style="width: 40px"></td>
+  </tr>
+  <tr>
+  <td>Expiry date</td>
+	<td><input type="text" name="date" id="date" maxlength="10" placeholder="mm/dd/yyyy" style="width: 100px"></td>
+  <tr>
+</table>
+  Do you want to submit it anonymously?
+   <input type="radio" name="ananymous" id="yes" value="S"> Yes
+      <input type="radio" name="ananymous" id="no" value="M"> No
+	  
+	  <table>
+	  <tr>
+	  <td>Additional Comments</td>
+	  <td><textarea rows="4" cols="50" placeholder="Optional"></textarea></td>
+	  </tr>
+	</table>
+	</div>
+	<center><input type="submit" value="Create Account" style ="width:200px";></center>
+	  </form>
+	  <br>
+
+    <script  type="text/javascript">
+        function validatte() {
+            alert("inside func")
+            if (document.myForm.firstName.value == "") {
+                alert("Please provide your First name!");
+                return false;
+            }
+            else if (document.myForm.middleName.value == "") {
+                alert("Please provide your Middle name!");
+                return false;
+            }
+
+            else if (document.myForm.lastName.value == "") {
+                alert("Please provide your Last name!");
+                return false;
+            }
+
+            else if (document.myForm.Email.value == "") {
+                alert("Please provide your Email name!");
+                return false;
+            }
+
+            else if (document.myForm.Amount.value == "") {
+                alert("Please provide your valid Amount!");
+                return false;
+            }
+
+            else if (document.myForm.cardName.value == "") {
+                alert("Please provide your Card name!");
+                document.myForm.cardName.focus();
+                return false;
+            }
+
+            else if (document.myForm.cardNumber.value == "") {
+                alert("Please provide your Card Number!");
+                return false;
+            }
+            else if (document.myForm.cvvNumber.value == "") {
+                alert("Please provide your CVV Number!");
+                return false;
+            }
+            else if (document.myForm.date.value == "") {
+                alert("Please provide your Expiry Date!");
+                return false;
+            }
+            
+        }
+    </script>
+	
+

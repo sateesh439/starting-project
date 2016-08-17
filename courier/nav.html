@@ -1,0 +1,31 @@
+﻿
+<script src="javascript/JavaScript.js"></script>
+<div class="bs-example">
+    <ul class="nav nav-pills">
+     <li class="active"><a ng-click="sandy('Main')" class="btn"> {{nav | uppercase}} </a></li>
+
+         <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{nav1 | uppercase}} <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a ng-click="sandy('signup form to rider')" class="btn">Rider</a></li>
+                <li><a ng-click="sandy('signUp')" class="btn">User</a>
+                    </ul>
+                </li>
+            <li class="dropdown right">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">{{nav2 | uppercase}} <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a ng-click="sandy('Login')" class="btn">Rider</a></li>
+                <li><a ng-click="sandy('Login')" class="btn">user</a></li>
+            </ul>
+        </li>
+        
+       <li>
+                <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search" ng-model="searchText">
+
+            </div>
+        </li>
+        <li><input type="checkbox" ng-model="hideimage" />HIDE</li>
+    </ul>
+
+</div>

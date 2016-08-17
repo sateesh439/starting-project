@@ -1,0 +1,58 @@
+body
+	{
+	background-image: url("/images/White-Background.jpg");
+	border:2px solid green;
+	
+}
+.active
+{
+padding-left:350px;
+
+margin-left:100px;
+}
+.footer{
+	border: 2px solid gray;
+	border-radius:20px;
+	margin-left:450px;
+	margin-right:450px;
+ }
+.mainimage
+{
+align:center;
+display:block;
+}
+.para{
+margin-left:60px;
+margin-top:-10px;
+ line-height: 4;
+ font-size:100%;
+font-family:verdana;
+color:violet;
+
+}
+.main
+{
+border: 2px solid green;
+margin-left:100px;
+margin-right:100px;
+	
+}
+.bs-example{
+    	margin-left: 50px;
+}
+ .maininf
+ {
+	 
+	 border:2px solid green;
+	 margin: 10px 380px 10px 380px;
+	 padding:10px 100px 10px 100px;
+ }
+ .login 
+ {
+	 margin-left:100px;
+ }
+ .container
+ {
+	 margin-left:560px;
+ }
+ 
